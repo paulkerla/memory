@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jeu du Memory</title>
+    <script ></script>
 </head>
 <body>
-    
+    <header>
+        <h1>ENI - <strong>MEMORY</strong> - Accueil </h1>
+        <nav>
+            <button class ="Accueil">Accueil </button>
+            <button class ="S'inscrire">S'inscrire </button>
+            <button class ="Se connecter">Se connecter </button>
+            <button class ="Profil">Profil </button>
+            <button class ="Jouer">Jouer </button>
+        </nav>
+    </header>
+<section id="Accueil">
+    <p>Bienvenue sur le site du Memory de l'ENI. <br> 
+    Venez jouer avec nous et faites le meilleur score possible.
+    <br>
+    <br>
+    <strong>Règle du jeu :</strong>
+    <br>
+    </p>
+    <ul>
+        <li> Retournez deux cartes. Si les images sont identiques, le jeu laisse les cartes visibles.</li>
+        <li> Si les images sont différentes, les cartes se retournent faces cachées là où elles étaient.</li>
+        <li>La partie est terminée lorsque toutes les cartes ont été assemblées par paires.</li>
+    </ul>
+    <img src="/memory/ressources/memory_detail.png" alt="img">
+    <p> Si vous voulez vous souvenir de votre score. Inscrivez-vous via le formulaire. <br>
+    Le jeu garde les <strong>5 meilleurs </strong>scores. <br>
+    Si vous voulez relancer une partie, cliquez sur <strong>la barre d'espace.</strong></p>
+</section>
+<section id="S'inscrire">
+    <form action="" method="GET">
+        <legend><strong><h3>Inscrivez-vous</h3></strong></legend>
+            <label for="nom">Nom d'utilisateur :</label>
+            <input type="text" name="nom" id="nom" autofocus required placeholder="3 caractères minimum" pattern ="[A-Za-z]{3,}">
+
+    </form>
+
+</section>
 </body>
 </html>
