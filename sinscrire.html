@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S'inscrire</title>
+    <link rel="stylesheet" href="CSS/projet.css">
+    <script src="JS/inscription.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>ENI - <strong>MEMORY</strong> - S'inscrire </h1>
+        <nav>
+            <a href="index.html"> Accueil</a>
+            <a href="sinscrire.html"> S'inscrire</a>
+            <a href="seconnecter.html"> Se connecter</a>
+            <a href="profil.html"> Profil</a>
+            <a href="jouer.html"> Jouer</a>
+        </nav>
+    </header>
+    <fieldset>
+        <legend> Inscrivez-vous. </legend>
+        <form id="inscription">
+            <label for="nom">Nom d'utilisateur :</label>
+            <input type="text" id="nom" name="nom" autofocus required placeholder="3 caractères min."
+            <br>
+            <br>
+            <label for="email">Entrez votre email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email">
+            <br>
+            <br>
+            <label for="mdp">Mot de passe : </label>
+            <input type="password" name="password" id="password" placeholder="Votre mot de passe"
+            <p> Au moins une majuscule, une minuscule, un chiffre, ainsi que 6 caractères minimum.</p>
+            <label for="mpd2">Confirmez le mot de passe</label>
+            <input type="password" name="password2" id="password2" placeholder="Confirmez votre mot de passe">
+            <br>
+            <br>
+    
+            <input type="submit" value="Création du compte"> 
+            <input type="reset" value="Annuler">
+        </form>
+    </fieldset>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+h1
+{
+    text-align: center;
+}
+*
+{
+    color: white;
+}
+body
+{
+    background: linear-gradient(to bottom right,green, blue);
+    height: 97vh;
+
+}
+main
+{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+nav
+{
+    border: 2px solid;
+    background-color: black;
+    white-space: nowrap;
+    overflow:hidden;
+    width: 40vw;
+    height: 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+a:-webkit-any-link {
+    text-decoration: none;
+}
+#accueil
+{
+    border-color: gray;
+    border: 2px solid;
+    background-color: black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    margin-top: 10vh;
+    width: 63vw;
+    
+    
+}
+#accueil .image1
+{
+    width: 40%;
+    align-self: center;
+    
+
+}
+
+img
+{
+    width: 2vw;
+    height: 10vh;
+    border: 2px solid;
+}
+
+.jeu {
+    width:  90vw;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.memory-card {
+    width: 15vw;
+    height:15vh;
+    margin: 5px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    flex-basis: 20%;
+}
+
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #1C7CCC;
+    backface-visibility: hidden;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+input
+{
+    color: black;
+}
