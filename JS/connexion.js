@@ -1,6 +1,8 @@
 const form = document.getElementById('connexion');
+console.log(form)
 form.addEventListener('submit', function (event) {
     event.preventDefault();
+    console.log("entree");
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
     console.log(email)
