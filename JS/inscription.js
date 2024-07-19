@@ -14,8 +14,8 @@ form.addEventListener('submit', function (event) {
     }
     for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
-        if (key === nom) {
-            alert("Le nom d'utilisateur est déjà utilisé")
+        if (key === email) {
+            alert("L'email' est déjà utilisé")
             return;
         }
     }
@@ -27,9 +27,9 @@ form.addEventListener('submit', function (event) {
     {
         const key = localStorage.key(i);
         const values = localStorage.getItem(key);
-        if (values === email)
+        if (values === password)
         {
-            alert("L'adresse mail est déjà utilisé")
+            alert("Le mot de passe est déjà utilisé")
             return;
         }
     }
@@ -41,6 +41,6 @@ form.addEventListener('submit', function (event) {
     }
 
     alert('Formulaire soumis avec succès !');
-    localStorage.setItem(nom, email);
+    localStorage.setItem(email, password);
     window.location.href ='seconnecter.html'
 })
